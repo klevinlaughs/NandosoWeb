@@ -16,10 +16,13 @@ function displayComments(comments) {
         var row = document.createElement("tr");
 
         var userCol = document.createElement("td");
+        userCol.attributes['style'] = 'text-align:center';
+        userCol.style = "text-align:center";
         userCol.innerHTML = comments[i].name;
         row.appendChild(userCol);
 
         var commentCol = document.createElement("td");
+        commentCol.style = "text-align:center";
         commentCol.innerHTML = comments[i].message;
         row.appendChild(commentCol);
 

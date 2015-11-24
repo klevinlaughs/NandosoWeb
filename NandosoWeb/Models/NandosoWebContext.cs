@@ -7,8 +7,26 @@ using System.Web;
 
 namespace NandosoWeb.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoWebContext : DbContext
     {
+
+        
+        // You can add custom code to this file. Changes will not be overwritten.
+        // 
+        // If you want Entity Framework to drop and regenerate your database
+        // automatically whenever you change your model schema, please use data migrations.
+        // For more information refer to the documentation:
+        // http://msdn.microsoft.com/en-us/data/jj591621.aspx
+
+        public NandosoWebContext() : base("name=NandosoWebContext")
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<NandosoWebContext, MyConfiguration>());
+        }
+
+        public System.Data.Entity.DbSet<NandosoWeb.Models.Special> Specials { get; set; }
+
+        public System.Data.Entity.DbSet<NandosoWeb.Models.Comment> Comments { get; set; }
 
         public class MyConfiguration : DbMigrationsConfiguration<NandosoWebContext>
         {
@@ -59,23 +77,6 @@ namespace NandosoWeb.Models
 
             }
         }
-        // You can add custom code to this file. Changes will not be overwritten.
-        // 
-        // If you want Entity Framework to drop and regenerate your database
-        // automatically whenever you change your model schema, please use data migrations.
-        // For more information refer to the documentation:
-        // http://msdn.microsoft.com/en-us/data/jj591621.aspx
-
-        public NandosoWebContext() : base("name=NandosoWebContext")
-        {
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<NandosoWebContext, MyConfiguration>());
-        }
-
-        public System.Data.Entity.DbSet<NandosoWeb.Models.Special> Specials { get; set; }
-
-        public System.Data.Entity.DbSet<NandosoWeb.Models.Comment> Comments { get; set; }
-
-
 
     }
 }

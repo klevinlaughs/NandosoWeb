@@ -25,29 +25,39 @@
             </table>
         </div>
 
-        <div class="col-md-4">
+        <!--<div class="col-md-4">-->
 
-            <form>
+            <form class="col-md-4">
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input class="form-control" type="text" id="name" placeholder="Enter your name" />
+                    <input class="form-control" type="text" id="username" placeholder="Enter your name" value="klevin"/>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input class="form-control" type="text" id="email" placeholder="abc123@example.com" />
+                    <input class="form-control" type="text" id="email" placeholder="abc123@example.com" value="kclau95@gmail.com"/>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Feedback:</label>
-                    <textarea class="form-control" rows="10" style="resize:none" id="message" placeholder="Tell us what you think!"></textarea>
+                    <textarea class="form-control" rows="10" style="resize:none" id="message" placeholder="Tell us what you think!">lel :D</textarea>
                 </div>
 
-                <button class="btn btn-default" type="submit">Comment</button>
-
+                <!--<button class="btn btn-default" type="submit" onclick="postComment()">Comment</button>-->
+                <button>Submit</button>
             </form>
         </div>
-    </div>
+    <!--</div>-->
+
+    <script>
+        var username = document.getElementById("username");
+        var email = document.getElementById("email");
+        var message = document.getElementById("message");
+
+        console.log(username.value);
+        console.log(email.value);
+        console.log(message.value);
+    </script>
 
 </body>
 </html>

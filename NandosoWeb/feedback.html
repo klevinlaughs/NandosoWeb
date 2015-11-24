@@ -3,7 +3,7 @@
 <head>
     <title>Nandoso - Feedback</title>
     <meta charset="utf-8" />
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
 
     <script src="Scripts/commenthandler.js"></script>
@@ -13,18 +13,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="col-md-8">
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>User</th>
-                            <th>Feedback</th>
-                        </tr>
-                    </thead>
-                    <tbody id="feedbackList"/>
-                </table>
-            </div>
+        <div class="col-md-8 table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-2">User</th>
+                        <th class="col-md-6">Feedback</th>
+                    </tr>
+                </thead>
+                <tbody id="feedbackList" />
+            </table>
         </div>
 
         <div class="col-md-4">
@@ -34,8 +32,19 @@
                     <label for="name">Name:</label>
                     <input class="form-control" type="text" id="name" placeholder="Enter your name" />
                 </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="text" id="email" placeholder="abc123@example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Feedback:</label>
+                    <textarea class="form-control" rows="10" style="resize:none" id="message" placeholder="Tell us what you think!"></textarea>
+                </div>
+
                 <button class="btn btn-default" type="submit">Comment</button>
-                
+
             </form>
         </div>
     </div>

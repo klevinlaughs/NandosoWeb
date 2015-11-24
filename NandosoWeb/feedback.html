@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Nandoso - Feedback</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/commenthandler.js"></script>
+    <script src="Scripts/feedback.js"></script>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-8">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Feedback</th>
+                        </tr>
+                    </thead>
+                    <tbody id="feedbackList"/>
+                </table>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input class="form-control" type="text" id="name" placeholder="Enter your name" />
+                </div>
+                <button class="btn btn-default" type="submit">Comment</button>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

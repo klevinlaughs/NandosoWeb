@@ -1,4 +1,4 @@
-﻿var commentloader = (function () {
+﻿var commenthandler = (function () {
     
     return {
         getComments: function (callback) {

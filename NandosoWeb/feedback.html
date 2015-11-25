@@ -13,21 +13,8 @@
 </head>
 <body>
     <div class="container">
-        <div class="col-md-8 table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th class="col-md-2" style="text-align: center">User</th>
-                        <th class="col-md-6" style="text-align: center">Feedback</th>
-                    </tr>
-                </thead>
-                <tbody id="feedbackList" />
-            </table>
-        </div>
 
-        <!--<div class="col-md-4">-->
-
-        <form class="col-md-4">
+        <form class="col-md-4 col-md-push-8">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input class="form-control" type="text" id="username" placeholder="Enter your name" />
@@ -49,11 +36,23 @@
 
         </form>
 
-        <footer class="modal-footer">
+        <div class="col-md-8 col-md-pull-4 table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-2" style="text-align: center">User</th>
+                        <th class="col-md-6" style="text-align: center">Feedback</th>
+                    </tr>
+                </thead>
+                <tbody id="feedbackList" />
+            </table>
+        </div>
+
+
+        <footer class="modal-footer col-xs-12">
             Nandoso - Kelvin Lau
         </footer>
     </div>
-    <!--</div>-->
 
 
 </body>

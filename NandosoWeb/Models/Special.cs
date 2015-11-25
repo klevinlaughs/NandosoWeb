@@ -7,7 +7,7 @@ namespace NandosoWeb.Models
 {
     public enum type
     {
-        Weight, Item
+        Combo, Single
     }
 
     public class Special

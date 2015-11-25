@@ -1,10 +1,10 @@
 ﻿// Run this when the document is loaded
 document.addEventListener("DOMContentLoaded", function () {
     console.log("Feedback page loaded...");
-    getComments();
+    loadComments();
 });
 
-function getComments() {
+function loadComments() {
     console.log("Getting comments...");
     commenthandler.getComments(displayComments);
 }

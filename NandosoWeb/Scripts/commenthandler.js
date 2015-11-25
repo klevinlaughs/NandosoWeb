@@ -39,7 +39,8 @@ function postComment() {
             date: date.toLocaleString()
         },
         url: "https://Nandosoklau158.azurewebsites.net/api/comments",
-        error: function() {
+        error: function () {
+            // TODO make jQuery failed post popup
             console.log("POST FAILED");
         }
     });

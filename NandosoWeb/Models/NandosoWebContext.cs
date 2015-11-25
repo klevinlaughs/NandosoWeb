@@ -33,6 +33,7 @@ namespace NandosoWeb.Models
             public MyConfiguration()
             {
                 this.AutomaticMigrationsEnabled = true;
+                this.AutomaticMigrationDataLossAllowed = true;
             }
 
             protected override void Seed(NandosoWebContext context)
@@ -43,13 +44,13 @@ namespace NandosoWeb.Models
                         discount = 1.5,
                         name ="large chips" ,
                         originalPrice =2.99,
-                        type =type.Item
+                        type =type.Single
                     },
                     new Special {
                         discount =1,
                         name ="drum",
                         originalPrice =3.5,
-                        type =type.Weight
+                        type =type.Combo
                     }
                 };
                 specials.ForEach(s => context.Specials.AddOrUpdate(p => p.name, s));

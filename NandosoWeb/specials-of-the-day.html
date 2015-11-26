@@ -7,6 +7,7 @@
     <script src="Scripts/jquery-2.1.4.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
 
+    <script src="Scripts/SpecialModule.js"></script>
     <script src="Scripts/specials.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -15,18 +16,22 @@
 <body>
 
     <div class="container">
-        <div class="table-responsive">
+        <div class="table-responsive col-md-6">
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
                         <th class="col-md-2">Item</th>
-                        <th class="col-md-6">Price</th>
+                        <th class="col-md-3">Original price</th>
+                        <th class="col-md-4" style="background-color:yellow">Discount price</th>
+                        <th class="col-md-3">You $ave</th>
                     </tr>
                 </thead>
+
+                <tbody id="specialsTable"></tbody>
             </table>
         </div>
 
-        <footer class="modal-footer">
+        <footer class="modal-footer col-md-12">
             Nandoso - Kelvin Lau
         </footer>
 

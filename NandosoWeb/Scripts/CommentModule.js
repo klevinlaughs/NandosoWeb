@@ -5,7 +5,6 @@
             $.ajax({
                 method: "GET",
                 dataType: "json", // JSON with padding, access control?,
-                //url: "https://Nandosoklau158.azurewebsites.net/api/comments",
                 url:"/api/comments",
                 success: function (data) {
                     //console.log(data);
@@ -30,8 +29,7 @@
                     message: message.value,
                     date: date.toLocaleString()
                 },
-                //url: "https://Nandosoklau158.azurewebsites.net/api/comments",
-                url: "http://localhost:56969/api/comments",
+                url: "/api/comments",
                 error: function () {
                     // TODO make jQuery failed post popup
                     console.log("POST FAILED");

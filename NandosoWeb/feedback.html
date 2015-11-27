@@ -12,9 +12,20 @@
     <script src="Scripts/feedback.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/feedback.css" rel="stylesheet" />
 </head>
 <body>
+
     <div class="container">
+
+        <header class="page-header row">
+            <a href="/index.html" class="col-xs-1">
+                <img src="/images/THechicken.jpg" class="img-responsive img-thumbnail" alt="Nandoso"/>
+            </a>
+            <h1 style="text-align:center" class="col-xs-11">
+                Tell us what you think about our chicken!
+            </h1>
+        </header>
 
         <form class="col-md-4 col-md-push-8">
             <div class="form-group">
@@ -38,24 +49,13 @@
 
         </form>
 
-        <div class="col-md-8 col-md-pull-4 table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th class="col-md-1" style="text-align: center">User</th>
-                        <th class="col-md-5" style="text-align: center">Feedback</th>
-                    </tr>
-                </thead>
-                <tbody id="feedbackList" />
-            </table>
+        <div class="col-md-8 col-md-pull-4 table-responsive" id="feedbackList">
         </div>
-
 
         <footer class="modal-footer col-xs-12">
             Nandoso - Kelvin Lau
         </footer>
     </div>
-
 
 </body>
 </html>

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace NandosoWeb.Models
 {
-    //[DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoWebContext : DbContext
     {
 

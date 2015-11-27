@@ -12,34 +12,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-md-6">
-                <a href="/swagger">Swagger</a>
-                .col-md-6
-                <br />
-                <a href="specials-of-the-day.html">Specials</a>
-            </div>
-            <div class="col-xs-6 col-md-6">
-                <a href="/feedback.html">Feedback</a>
-                .col-md-6
-            </div>
-        </div>
-        
-        <div class="row">
-            <a onclick="document.getElementById('div_name2').style.display='';return false;"
-               href="" style="text-decoration:none;border-bottom:1px dotted blue;">
-                Show more...
+
+        <header class="page-header row">
+            <a href="/index.html" class="col-xs-1">
+                <img src="/images/THechicken.jpg" class="img-responsive img-thumbnail" alt="Nandoso" />
             </a>
-            <br />
-            <div id="div_name2" style="display:none;margin:15px 15px 0px 15px;padding:5px;border:1px solid #aaa;">
-                This is more information placed in our hidden div.
-                When you click on the "hide" link this DIV area will disappear:
-                <a onclick="document.getElementById('div_name2').style.display='none';return false;" href=""
-                   style="text-decoration:none;border-bottom:1px dotted blue;">hide</a>
+            <h1 style="text-align:center" class="col-xs-11">
+                Nandoso, home of the flame grilled chicken!
+            </h1>
+        </header>
+
+        <div class="row">
+            <div class="col-xs-6" style="text-align:center">
+                <a href="specials-of-the-day.html">
+                    <img src="/images/drum.jpg" alt="Specials!" class="img-rounded img-responsive" />
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <a href="/feedback.html">
+                    <img src="images/drum.jpg" alt="Feedback" class="img-rounded img-responsive" />
+                </a>
             </div>
         </div>
 
-        <footer class="modal-footer">
+        <div class="col-xs-12" style="text-align:center">
+            <img src="/images/chicken.jpg" alt="Yum" class="img-circle img-responsive" />
+        </div>
+
+        <footer class="modal-footer col-xs-12">
             Nandoso - Kelvin Lau
         </footer>
 

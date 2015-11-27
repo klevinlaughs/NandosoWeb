@@ -1,11 +1,12 @@
-﻿var commenthandler = (function () {
+﻿var CommentModule = (function () {
     
     return {
         getComments: function (callback) {
             $.ajax({
-                type: "GET",
-                dataType: "json", // JSON with padding, access control?
-                url: "https://Nandosoklau158.azurewebsites.net/api/comments",
+                method: "GET",
+                dataType: "json", // JSON with padding, access control?,
+                //url: "https://Nandosoklau158.azurewebsites.net/api/comments",
+                url:"/api/comments",
                 success: function (data) {
                     //console.log(data);
                     callback(data);
@@ -20,10 +21,6 @@
 
             var date = new Date();
 
-            console.log(username.value);
-            console.log(email.value);
-            console.log(message.value);
-
             $.ajax({
                 type: "POST",
                 dataType: "json",
@@ -33,7 +30,8 @@
                     message: message.value,
                     date: date.toLocaleString()
                 },
-                url: "https://Nandosoklau158.azurewebsites.net/api/comments",
+                //url: "https://Nandosoklau158.azurewebsites.net/api/comments",
+                url: "http://localhost:56969/api/comments",
                 error: function () {
                     // TODO make jQuery failed post popup
                     console.log("POST FAILED");

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace NandosoWeb.Models
 {
-    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+    //[DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoWebContext : DbContext
     {
 
@@ -63,7 +63,8 @@ namespace NandosoWeb.Models
                             name="Klevin",
                             email="kelvin@abc.com",
                             message="like",
-                            date=new DateTime(2015,9,3)
+                            date=new DateTime(2015,9,3)   ,
+                            reply = "Seeded reply"
                         }            ,
                         new Comment
                         {

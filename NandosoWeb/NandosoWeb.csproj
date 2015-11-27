@@ -128,7 +128,7 @@
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\commenthandler.js" />
+    <Content Include="Scripts\CommentModule.js" />
     <Content Include="Scripts\feedback.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -143,6 +143,7 @@
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\ReplyModule.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Scripts\specials.js" />
     <Content Include="specials-of-the-day.html" />

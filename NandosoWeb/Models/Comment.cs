@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -17,5 +18,7 @@ namespace NandosoWeb.Models
         public DateTime date { get; set; }
         [Required]
         public string message { get; set; }
+
+        public string reply { get; set; }
     }
 }

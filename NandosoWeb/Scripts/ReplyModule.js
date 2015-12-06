@@ -15,6 +15,10 @@
             },
             url: "/api/comments/" + data.ID,
 
+            success: function(){
+                window.location.reload();
+            },                            
+
             error: function () {
                 console.log("Could not post comment...");
             }

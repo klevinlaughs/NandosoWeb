@@ -133,6 +133,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\CommentModule.js" />
+    <Content Include="Scripts\facebook-login.js" />
     <Content Include="Scripts\feedback.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
